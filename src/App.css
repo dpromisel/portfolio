@@ -107,7 +107,7 @@ nav .button-collapse {
 
 .landing-img > img {
     width: 100%;
-    background-image: 'assets/images/landing/splah.jpg';
+    background-image: image('assets/images/landing/splah.j');
 }
 
 hr {

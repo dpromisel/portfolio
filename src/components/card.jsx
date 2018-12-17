@@ -14,7 +14,7 @@ class Card extends Component {
       };
     }
 
-    cardClicked = (event) => {
+    openModal = (event) => {
       this.setState({show: true });
     }
 
@@ -45,17 +45,38 @@ class Card extends Component {
         demoBtn = (<a className="waves-effect waves-light btn" target="_blank" href={props.demo}><i className="material-icons right">present_to_all</i> code</a>);
     }
     */
-    return(
 
-      <Col lg={3} md={4} sm={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
-      <a href={this.props.pdf} style={{textDecoration: 'none'}} target="_blank">
-        <Thumbnail style = {this.state.style} src={this.props.src} alt={this.props.alt} onClick={this.cardClicked}>
-            <h4>{this.props.title}</h4>
-            <p>{this.props.info}</p>
-        </Thumbnail>
-        </a>
-      </Col>
-    );
+    if (this.props.demo === "") {
+      return(
+        <Col lg={3} md={4} sm={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
+        <a href={this.props.pdf} style={{textDecoration: 'none'}} target="_blank">
+          <Thumbnail style = {this.state.style} src={this.props.src} alt={this.props.alt}>
+              <h4>{this.props.title}</h4>
+              <p>{this.props.info}</p>
+          </Thumbnail>
+          </a>
+        </Col>
+      );
+    } else {
+      return(
+        <Col lg={3} md={4} sm={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
+          <Thumbnail style = {this.state.style} src={this.props.src} alt={this.props.alt} onClick={this.openModal}>
+              <h4>{this.props.title}</h4>
+              <p>{this.props.info}</p>
+          </Thumbnail>
+
+          <Modal show={this.state.show} onHide={this.closeModal}>
+          <Modal.Header closeButton>
+            <Modal.Title> {this.props.title} </Modal.Title>
+          </Modal.Header>
+
+            <Modal.Footer>
+              <Button onClick={this.closeModal}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        </Col>
+      );
+    }
   }
 }
 

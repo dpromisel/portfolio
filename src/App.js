@@ -19,9 +19,7 @@ class App extends Component {
         <NavBar/>
         <LandingPage/>
         <Work/>
-        <About/>
         <Skills/>
-        <Contact/>
         <Footer/>
       </div>
     );
