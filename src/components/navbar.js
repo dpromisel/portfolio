@@ -73,10 +73,11 @@ export default class NavBar extends Component {
         const { width, closeHover } = this.state;
         const isMobile = width <= 991;
         let navbar = {};
+        let style = {background: '#212121'}
 
         if(isMobile){
             navbar = (
-                <nav>
+                <nav style={style}>
                     <div ref={this.setWrapperRef} className="nav-wrapper container">
                     <a className='nav-text-name center brand-logo'href="#">David Promisel</a>
                     <a className="button-collapse" onClick={this.openNav}><i className="material-icons">menu</i></a>
@@ -92,7 +93,7 @@ export default class NavBar extends Component {
             );
         } else {
             navbar = (
-                <nav>
+                <nav style={style}>
                     <div className="nav-wrapper container">
                     <a className='nav-text-name' href="#">David Promisel</a>
                     <ul className="right hide-on-sm-and-down">

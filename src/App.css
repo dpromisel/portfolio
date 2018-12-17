@@ -36,9 +36,16 @@ nav {
     background-color: white;
 }
 
-.nav-text-name,
 .brand-logo.center {
     color: #127da1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-text-name {
+    color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -68,11 +75,11 @@ nav {
 }
 
 .nav-text-name:hover, .black-color.sideNavClose.left {
-    color: black;
+    color: white;
 }
 
 .nav-text {
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
     font-weight: bold;
@@ -80,7 +87,6 @@ nav {
 
 .nav-text:hover,
 .nav-text:active {
-    background-color: rgba(18, 125, 161, .9);
     color: white;
 }
 
@@ -101,6 +107,7 @@ nav .button-collapse {
 
 .landing-img > img {
     width: 100%;
+    background-image: 'assets/images/landing/splah.jpg';
 }
 
 hr {
@@ -333,4 +340,3 @@ form > .row {
         margin-top: 2%;
     }
 }
-

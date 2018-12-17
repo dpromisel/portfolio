@@ -15,8 +15,7 @@ export default [
         img: redesign,
         pdf: redesign_pdf,
         alt: 'Environmindful',
-        codeLink: "https://github.com/brucean52/Environmindful",
-        demoLink: "https://brucean52.github.io/Environmindful/"
+        demoLink: ""
     },
     {
         name: 'React Development',
@@ -24,8 +23,7 @@ export default [
         img: development,
         pdf: redesign_pdf,
         alt: 'Match Two',
-        codeLink: "https://github.com/brucean52/memory-match-js",
-        demoLink: "https://brucean52.github.io/memory-match-js/"
+        demoLink: "true"
     },
     {
         name: 'Iterative Design',
@@ -33,16 +31,14 @@ export default [
         img: eyetracking,
         pdf: iterative_pdf,
         alt: 'eyetracking',
-        codeLink: "https://github.com/brucean52/contact_list",
-        demoLink: "http://contact-list.brucedev.net/"
+        demoLink: ""
     },
     {
         name: 'Personas & Storyboarding',
         info: 'Join me as I step into a user’s shoes. In this project, I observe real users interacting with an interface, interview these individuals about their experiences, construct users’ mental models, create personas based on these users, and illustrate a storyboard for one persona. This is a classic UX task.',
         img: flexnotes,
         pdf: personas_pdf,
-        alt: 'FlexNotes',
-        codeLink: "https://github.com/conmeconte/flexnotes",
-        demoLink: "https://flexnotes.net/"
+        alt: 'Storyboarding',
+        demoLink: ""
     },
 ];

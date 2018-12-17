@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Thumbnail, Col, Modal, Button } from 'react-bootstrap';
-import { Document } from 'react-pdf';
 
 
 class Card extends Component {
@@ -48,9 +47,9 @@ class Card extends Component {
     */
     return(
 
-      <Col lg={3} md={4} sm={6} key={this.props.title} style = {this.state.style} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
+      <Col lg={3} md={4} sm={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
       <a href={this.props.pdf} style={{textDecoration: 'none'}} target="_blank">
-        <Thumbnail  src={this.props.src} alt={this.props.alt} onClick={this.cardClicked}>
+        <Thumbnail style = {this.state.style} src={this.props.src} alt={this.props.alt} onClick={this.cardClicked}>
             <h4>{this.props.title}</h4>
             <p>{this.props.info}</p>
         </Thumbnail>
