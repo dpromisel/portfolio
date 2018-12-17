@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div>
         <NavBar/>
-        <LandingPage/>
+        //<LandingPage/>
         <Work/>
         <About/>
         <Skills/>

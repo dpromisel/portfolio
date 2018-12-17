@@ -1,23 +1,24 @@
 import React from 'react';
 
-import Card from './card';
+import Card from './card.jsx';
+import { Row } from 'react-bootstrap';
 import workDataArray from '../assets/data/work_data';
 
 
 export default props=>{
-    
+
     const cardList = workDataArray.map((item, index) =>{
         return(
-            <Card title={item.name} info={item.info} src={item.img} key={index} alt={item.alt} code={item.codeLink} demo={item.demoLink}/>
+            <Card title={item.name} pdf={item.pdf} info={item.info} src={item.img} key={index} alt={item.alt} code={item.codeLink} demo={item.demoLink}/>
         );
     });
     return(
         <section id='work'>
-            <h3>My Work</h3>
+            <h3>Projects</h3>
             <hr/>
-            <div className="row">
+            <Row>
             {cardList}
-            </div>
+            </Row>
         </section>
     );
 }

@@ -11,7 +11,7 @@ export default class NavBar extends Component {
 
         this.openNav = this.openNav.bind(this);
         this.closeNav = this.closeNav.bind(this);
-        this.setWrapperRef = this.setWrapperRef.bind(this);           
+        this.setWrapperRef = this.setWrapperRef.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
     }
 
@@ -20,13 +20,13 @@ export default class NavBar extends Component {
         window.addEventListener('scroll', this.handleScroll);
         document.addEventListener('mousedown', this.handleClickOutside);
     }
-      
+
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
         window.removeEventListener('scroll', this.handleScroll);
         document.removeEventListener('mousedown', this.handleClickOutside);
     }
-      
+
     handleWindowSizeChange = () => {
         this.setState({ width: window.innerWidth });
     }
@@ -78,7 +78,7 @@ export default class NavBar extends Component {
             navbar = (
                 <nav>
                     <div ref={this.setWrapperRef} className="nav-wrapper container">
-                    <a className='nav-text-name center brand-logo'href="#">Bruce</a>
+                    <a className='nav-text-name center brand-logo'href="#">David Promisel</a>
                     <a className="button-collapse" onClick={this.openNav}><i className="material-icons">menu</i></a>
                     <ul className={`side-nav ${this.state.open ? 'visible': 'hidden' }`} tabIndex="0" onBlur={ this.closeNav }>
                         <li><a className='nav-text' onClick={this.closeNav} onMouseEnter={this.closeHover.bind(this)} onMouseLeave={this.closeNotHover.bind(this)}><i className={`${closeHover ? "white-color":"black-color"} material-icons left sideNavClose`}>close</i></a></li>
@@ -87,14 +87,14 @@ export default class NavBar extends Component {
                         <li><a className='nav-text' onClick={this.closeNav} href="#skills">Skills</a></li>
                         <li><a className='nav-text' onClick={this.closeNav} href="#contact">Contact</a></li>
                     </ul>
-                    </div>  
+                    </div>
                 </nav>
             );
         } else {
             navbar = (
                 <nav>
                     <div className="nav-wrapper container">
-                    <a className='nav-text-name' href="#">Bruce</a>
+                    <a className='nav-text-name' href="#">David Promisel</a>
                     <ul className="right hide-on-sm-and-down">
                         <li><a className='nav-text' href="#work">Work</a></li>
                         <li><a className='nav-text' href="#about">About</a></li>
@@ -102,13 +102,13 @@ export default class NavBar extends Component {
                         <li><a className='nav-text' href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                </nav>  
+                </nav>
             );
         }
 
         return(
             <div className="navbar-fixed">
-                {navbar}      
+                {navbar}
             </div>
         );
     }
