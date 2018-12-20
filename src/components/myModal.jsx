@@ -34,7 +34,7 @@ class MyModal extends Component {
   demo = () => {
     if (this.props.demo !== "")  {
       return (
-        <a href={this.props.demo} style={{textDecoration: 'none'}}>
+        <a href={process.env.PUBLIC_URL + this.props.demo} style={{textDecoration: 'none'}}>
             <Button>Demo</Button>
         </a>
       );
