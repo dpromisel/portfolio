@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route path="/" component={Home} exact/>
-          <Route path="/nbaIndex" component={NbaApp}/>
+          <Route path="/portfolio" component={Home} exact/>
+          <Route path="/portfolio/nbaIndex" component={NbaApp}/>
         </div>
       </BrowserRouter>
     );

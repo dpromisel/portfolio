@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Thumbnail, Col, Modal, Button } from 'react-bootstrap';
+import { Thumbnail, Col, Button } from 'react-bootstrap';
 import MyModal from './myModal.jsx';
 
 
@@ -74,7 +74,8 @@ class Card extends Component {
           challenges={this.props.challenges}
           keys={this.props.takeaways}
           pdf={this.props.pdf}
-          demo={this.props.demo}>
+          demo={this.props.demo}
+          details={this.props.details}>
           </MyModal>
 
         </Col>

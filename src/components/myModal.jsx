@@ -41,10 +41,21 @@ class MyModal extends Component {
     }
   }
 
+  details = () => {
+    if (this.props.details !== "")  {
+      return (
+        <div>
+          <h4> Design Details </h4>
+          <p> {this.props.details} </p>
+        </div>
+      );
+    }
+  }
+
   render() {
 
     return(
-      <Modal show={this.props.show} onHide={this.props.onHide} bsSize="large">
+      <Modal show={this.props.show} onHide={this.props.onHide}>
       <Modal.Header closeButton>
         <Modal.Title> {this.props.title} </Modal.Title>
       </Modal.Header>
@@ -56,6 +67,7 @@ class MyModal extends Component {
         <ul>
           {this.challenges}
         </ul>
+        {this.details()}
         <h4>Key Takeaways</h4>
         <ul styles = {this.style}>
           {this.takeaways}

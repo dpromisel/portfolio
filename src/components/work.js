@@ -20,6 +20,7 @@ export default props=>{
               key={index}
               alt={item.alt}
               code={item.codeLink}
+              details={item.details}
             />
         );
     });

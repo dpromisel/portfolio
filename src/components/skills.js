@@ -12,12 +12,6 @@ import apiLogo from '../assets/images/skills/api.png';
 import reactLogo from '../assets/images/skills/react-logo.png';
 import reduxLogo from '../assets/images/skills/redux.png';
 
-import nodephpLogo from '../assets/images/skills/node_php.png';
-import databaseLogo from '../assets/images/skills/database.png';
-
-import androidLogo from '../assets/images/skills/android.png';
-import cLogo from '../assets/images/skills/c-logo.png';
-
 import agileLogo from '../assets/images/skills/agile_git_mamp.png';
 import npmLogo from '../assets/images/skills/vs_code_npm_postman.png';
 

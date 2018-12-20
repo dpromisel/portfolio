@@ -46,7 +46,7 @@ export default props =>{
 
       <Row>
         <Col >
-          <p styles={{fontSize: 40}}> About Me </p>
+          <h4 styles={{fontWeight: 'bold'}}> About Me </h4>
           <p>
           I am a software developer who understands the importance of user
           interface design and a positive user experience on the overall success of an application.
@@ -54,7 +54,9 @@ export default props =>{
           We try to avoid those applications that drive us crazy - you can’t navigate efficiently,
           use it how you’d like to, and it’s hard to read or hard on your eyes
           because no one thought about the color scheme or using a standard,
-          easy to read font or standard navigation conventions.
+          easy to read font or standard navigation conventions.</p>
+
+          <p className="boldText">
           My goal is to use my understanding of user design principles,
           techniques, modeling, user evaluation and feedback to ensure the systems
           I develop provide a positive user experience.</p>
@@ -62,9 +64,11 @@ export default props =>{
       </Row>
 
       <Row>
+      <center>
         <a href={resume} style={{textDecoration: 'none'}} target="_blank">
           <Button>Download Resume</Button>
         </a>
+        </center>
       </Row>
 
     </Grid>
