@@ -87,6 +87,6 @@ export default [
         img: development,
         pdf: '',
         alt: 'Match Two',
-        demo: "/nbaIndex"
+        demo: "nbaIndex"
     },
 ];
