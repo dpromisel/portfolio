@@ -27,7 +27,7 @@ class MyModal extends Component {
       if (this.props.title === "Personas & Storyboarding") {
         console.log("personas and storyboardingggg");
         return (
-          <a href={require('../assets/pdfs/Personas_Final.pdf')} target="_blank">
+          <a href='../assets/pdfs/Personas_Final.pdf' target="_blank">
             <Button>Read More</Button>
           </a>
         );
