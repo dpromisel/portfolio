@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Thumbnail, Col, Modal, Button } from 'react-bootstrap';
+import personas_pdf from '../assets/pdfs/Personas_Final.pdf';
 
 
 class MyModal extends Component {
@@ -23,11 +24,20 @@ class MyModal extends Component {
 
   read_more = () => {
     if (this.props.pdf !== "")  {
+      if (this.props.title === "Personas & Storyboarding") {
+        console.log("personas and storyboardingggg");
+        return (
+          <a href={personas_pdf} target="_blank">
+            <Button>Read More</Button>
+          </a>
+        );
+      } else {
       return (
-        <a href={this.props.pdf} style={{textDecoration: 'none'}} target="_blank">
+        <a href={this.props.pdf} target="_blank">
           <Button>Read More</Button>
         </a>
       );
+    }
     }
   }
 
