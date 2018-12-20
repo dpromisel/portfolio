@@ -3,8 +3,8 @@ import eyetracking from '../images/work/eyetracking.png';
 import redesign from '../images/work/redesign.png';
 import development from '../images/work/development.png';
 import redesign_pdf from '../pdfs/Redesign.pdf';
-import personas_pdf from '../pdfs/Personas_Final.pdf';
 import iterative_pdf from '../pdfs/Iterative_Design_Final.pdf';
+import personas_pdf from '../pdfs/Personas_Final.pdf';
 
 
 export default [
