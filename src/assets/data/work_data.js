@@ -11,34 +11,60 @@ import iterative_pdf from '../pdfs/Iterative_Design_Final.pdf';
 export default [
     {
         name: 'Personas & Storyboarding',
-        info: 'Join me as I step into a user’s shoes. In this project, I observe real users interacting with an interface, interview these individuals about their experiences, construct users’ mental models, create personas based on these users, and illustrate a storyboard for one persona. This is a classic UX task.',
+        info: `Join me as I step into the shoes of a user.
+        In this project, I observe real users interacting with an interface,
+        interview these individuals about their experiences, construct users’ mental models,
+        create personas based on these users,
+        and illustrate a storyboard for one persona. This is a classic UX task.`,
+        takeaways: [`It is so important to study the behavior of the user when designing an interface.`,
+        `Mental Models, Personas, and Storyboards are valuable steps to take
+        before designing an interface in order to understand the behavior of the users.`],
+        challenges: [`Developing personas and mental models that accurately reflect the obsereved user interactions`,
+        `Creating interface mockups that reflect the needs of the user`],
         img: flexnotes,
         pdf: personas_pdf,
         alt: 'Storyboarding',
-        demoLink: ""
+        demo: ''
     },
     {
         name: 'Responsive Redesign',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur quam in facilisis tristique. Proin viverra magna ante, non ornare neque ullamcorper luctus. Aliquam erat volutpat. Sed viverra vitae turpis at mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec a feugiat ante. Morbi non lobortis ligula. Proin pharetra sollicitudin sem, vitae euismod nulla malesuada sed.',
+        info: `A design of an interface can be judged by many factors.
+        The visual aesthetics can affect a user’s impression, but the quality of the design goes beyond its appearance.
+        For example, the quality of an interface also depends on its usability​
+        (the ability for users to learn and use the interface to achieve their goals)
+        and responsiveness​ (the ability for the interface to adapt to the medium in which it is presented).
+        In this project, I selected an interface and redesigned it to improve the overall quality`,
+        takeaways: [`An interface's usability can be determined via a thorough analysis of the intuitive design,
+        ease of learning, efficiency of use, memorability, and error frequency of the interface`,
+        `The subjective satisfaction of an interface is largely determined by choices made on the text, colors, and positioning of elements`],
+        challenges: [`Redesigning to improve the overall usability of an interface while maintaining theme and narritive of the website.`,
+        `Creating a user experience that adapts to the user's screen size without surrending usability`],
         img: redesign,
         pdf: redesign_pdf,
-        alt: 'Environmindful',
-        demoLink: ""
+        alt: 'redesign',
+        demo: ''
     },
     {
         name: 'Iterative Design',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum enim in erat feugiat, suscipit interdum nibh vehicula. Ut vehicula neque et velit elementum, ac imperdiet lorem pulvinar. Suspendisse tincidunt pellentesque metus, et luctus ipsum pulvinar a. Morbi eget nisi eleifend, hendrerit libero a, varius ipsum. Maecenas consectetur imperdiet arcu eget tincidunt. Ut varius bibendum bibendum. Donec leo lacus, facilisis eget lorem bibendum, fringilla fermentum diam. Aliquam efficitur tellus vitae risus venenatis consequat.',
+        info: `In today's digital age, the majority of new startups rely on some form of an interface to achieve their purpose.
+        In this project, a group of 3 other students and I selected a startup from the 2018 YCombinator batch and set out to design
+        a completely original interface primarily based off of the startup's mission statement.`,
+        takeaways: [`Iterative design is a powerful tool used by interface designers to narrow in on the desired form of an interface`],
+        challenges: [`Designing an interface based with limited guidelines`,],
         img: eyetracking,
         pdf: iterative_pdf,
         alt: 'eyetracking',
-        demoLink: ""
+        demo: ''
     },
     {
         name: 'React Development',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum enim in erat feugiat, suscipit interdum nibh vehicula. Ut vehicula neque et velit elementum, ac imperdiet lorem pulvinar. Suspendisse tincidunt pellentesque metus, et luctus ipsum pulvinar a. Morbi eget nisi eleifend, hendrerit libero a, varius ipsum. Maecenas consectetur imperdiet arcu eget tincidunt. Ut varius bibendum bibendum. Donec leo lacus, facilisis eget lorem bibendum, fringilla fermentum diam. Aliquam efficitur tellus vitae risus venenatis consequat.',
+        info: `Live filtering is a very crucial feature on websites and a good filtering system can considerably improve user experience.
+        Majority of modern websites utilize React.js, a modern JavaScript framework for building scalable, component-based user interfaces.`,
+        takeaways: [`React is a powerful web framework that can be used to quickly develop modular web interfaces`],
+        challenges: [`Using React and Bootstrap to make a usable and visaully appealing interface`],
         img: development,
-        pdf: redesign_pdf,
+        pdf: '',
         alt: 'Match Two',
-        demoLink: "true"
+        demo: "/nbaIndex"
     },
 ];

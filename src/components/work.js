@@ -9,7 +9,18 @@ export default props=>{
 
     const cardList = workDataArray.map((item, index) =>{
         return(
-            <Card title={item.name} pdf={item.pdf} info={item.info} src={item.img} key={index} alt={item.alt} code={item.codeLink} demo={item.demoLink}/>
+            <Card
+              title={item.name}
+              demo={item.demo}
+              challenges={item.challenges}
+              takeaways={item.takeaways}
+              pdf={item.pdf}
+              info={item.info}
+              src={item.img}
+              key={index}
+              alt={item.alt}
+              code={item.codeLink}
+            />
         );
     });
     return(
