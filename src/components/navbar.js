@@ -74,17 +74,18 @@ export default class NavBar extends Component {
         const isMobile = width <= 991;
         let navbar = {};
         let style = {background: '#212121'}
+        console.log(process.env.PUBLIC_URL);
 
         if(isMobile){
             navbar = (
                 <nav style={style}>
                     <div ref={this.setWrapperRef} className="nav-wrapper container">
-                    <a className='nav-text-name center brand-logo' href={process.env.PUBLIC_URL + '/'}>David Promisel</a>
+                    <a className='nav-text-name center brand-logo' href='/portfolio/'>David Promisel</a>
                     <a className="button-collapse" styles={{color: "white"}} onClick={this.openNav}><i className="material-icons">menu</i></a>
                     <ul className={`side-nav ${this.state.open ? 'visible': 'hidden' }`} tabIndex="0" onBlur={ this.closeNav }>
                         <li><a className='nav-text' onClick={this.closeNav} onMouseEnter={this.closeHover.bind(this)} onMouseLeave={this.closeNotHover.bind(this)}><i className={`${closeHover ? "white-color":"black-color"} material-icons left sideNavClose`}>close</i></a></li>
-                        <li><a className='nav-text' href={process.env.PUBLIC_URL + "/#work"}>Projects</a></li>
-                        <li><a className='nav-text' onClick={this.closeNav} href={process.env.PUBLIC_URL + "#skills"}>Skills</a></li>
+                        <li><a className='nav-text' href="/portfolio/#work">Projects</a></li>
+                        <li><a className='nav-text' onClick={this.closeNav} href="/portfolio/#skills">Skills</a></li>
                     </ul>
                     </div>
                 </nav>
@@ -93,10 +94,10 @@ export default class NavBar extends Component {
             navbar = (
                 <nav style={style}>
                     <div className="nav-wrapper container">
-                    <a className='nav-text-name' href={process.env.PUBLIC_URL + '/'} >David Promisel</a>
+                    <a className='nav-text-name' href='/portfolio/' >David Promisel</a>
                     <ul className="right hide-on-sm-and-down">
-                        <li><a className='nav-text' href={process.env.PUBLIC_URL + "/#work"}>Projects</a></li>
-                        <li><a className='nav-text' href={process.env.PUBLIC_URL + "#skills"}>Skills</a></li>
+                        <li><a className='nav-text' href="/portfolio/#work">Projects</a></li>
+                        <li><a className='nav-text' href="/portfolio/#skills">Skills</a></li>
                     </ul>
                 </div>
                 </nav>
