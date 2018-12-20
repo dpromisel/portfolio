@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Thumbnail, Col, Modal, Button } from 'react-bootstrap';
-import personas_pdf from '../assets/pdfs/Personas_Final.pdf';
+import personas_pdf from '../assets/pdfs/personas.pdf';
 
 
 class MyModal extends Component {

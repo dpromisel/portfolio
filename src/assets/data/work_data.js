@@ -4,7 +4,7 @@ import redesign from '../images/work/redesign.png';
 import development from '../images/work/development.png';
 import redesign_pdf from '../pdfs/Redesign.pdf';
 import iterative_pdf from '../pdfs/Iterative_Design_Final.pdf';
-import personas_pdf from '../pdfs/Personas_Final.pdf';
+import personas_pdf from '../pdfs/personas.pdf';
 
 
 export default [
