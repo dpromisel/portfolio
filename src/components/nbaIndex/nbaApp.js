@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './index.css';
 import FilteredList from "./FilteredList"
+import NavBar from '../navbar';
+
 
 const produce = [
   {name: "Apple", type: "Fruit"},
@@ -54,6 +56,7 @@ class NbaApp extends Component {
   render() {
     return (
       <div className = "App">
+      <NavBar/>
         <FilteredList items={teams}/>
       </div>
     );

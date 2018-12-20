@@ -21,7 +21,6 @@ class Home extends Component {
         <LandingPage/>
         <Work/>
         <Skills/>
-        <Footer/>
       </div>
     );
   }

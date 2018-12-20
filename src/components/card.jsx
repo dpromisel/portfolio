@@ -61,7 +61,7 @@ class Card extends Component {
     } else {
       */
       return(
-        <Col lg={3} md={4} sm={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
+        <Col md={6} sm={6} lg={6} key={this.props.title} onMouseEnter={this.cardEnter} onMouseLeave={this.cardLeave}>
           <Thumbnail style = {this.state.style} src={this.props.src} alt={this.props.alt} onClick={this.openModal}>
               <h4>{this.props.title}</h4>
           </Thumbnail>
