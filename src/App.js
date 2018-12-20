@@ -12,10 +12,10 @@ import NbaApp from './components/nbaIndex/nbaApp';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
-          <Route path={process.env.PUBLIC_URL + '/'} component={Home} exact />
-          <Route path={process.env.PUBLIC_URL + '/nbaIndex'} component={NbaApp}/>
+          <Route path='/' component={Home} exact />
+          <Route path='/nbaIndex' component={NbaApp}/>
         </div>
       </BrowserRouter>
     );
