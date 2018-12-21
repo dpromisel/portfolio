@@ -9,24 +9,6 @@ import personas_pdf from '../pdfs/personas.pdf';
 
 export default [
     {
-        name: 'Personas & Storyboarding',
-        info: `Join me as I step into the shoes of a user.
-        In this project, I observe real users interacting with an interface,
-        interview these individuals about their experiences, construct users’ mental models,
-        create personas based on these users,
-        and illustrate a storyboard for one persona. This is a classic UX task.`,
-        takeaways: [`It is so important to study the behavior of the user when designing an interface.`,
-        `Mental Models, Personas, and Storyboards are valuable steps to take
-        before designing an interface in order to understand the behavior of the users.`],
-        challenges: [`Developing personas and mental models that accurately reflect the obsereved user interactions`,
-        `Creating interface mockups that reflect the needs of the user`],
-        details: ``,
-        img: flexnotes,
-        pdf: personas_pdf,
-        alt: 'Storyboarding',
-        demo: ''
-    },
-    {
         name: 'Responsive Redesign',
         info: `A design of an interface can be judged by many factors.
         The visual aesthetics can affect a user’s impression, but the quality of the design goes beyond its appearance.
@@ -88,5 +70,23 @@ export default [
         pdf: '',
         alt: 'Match Two',
         demo: "nbaIndex"
+    },
+    {
+        name: 'Personas & Storyboarding',
+        info: `Join me as I step into the shoes of a user.
+        In this project, I observe real users interacting with an interface,
+        interview these individuals about their experiences, construct users’ mental models,
+        create personas based on these users,
+        and illustrate a storyboard for one persona. This is a classic UX task.`,
+        takeaways: [`It is so important to study the behavior of the user when designing an interface.`,
+        `Mental Models, Personas, and Storyboards are valuable steps to take
+        before designing an interface in order to understand the behavior of the users.`],
+        challenges: [`Developing personas and mental models that accurately reflect the obsereved user interactions`,
+        `Creating interface mockups that reflect the needs of the user`],
+        details: ``,
+        img: flexnotes,
+        pdf: personas_pdf,
+        alt: 'Storyboarding',
+        demo: ''
     },
 ];
