@@ -35,7 +35,7 @@ class MyModal extends Component {
   demo = () => {
     if (this.props.demo !== "")  {
       return (
-        <a href={'/portfolio/'+ this.props.demo} style={{textDecoration: 'none'}}>
+        <a href={'/portfolio/' + this.props.demo} style={{textDecoration: 'none'}}>
             <Button>Demo</Button>
         </a>
       );

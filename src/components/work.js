@@ -15,6 +15,7 @@ export default props=>{
               challenges={item.challenges}
               takeaways={item.takeaways}
               pdf={item.pdf}
+              pdf_link={item.pdf_link}
               info={item.info}
               src={item.img}
               key={index}

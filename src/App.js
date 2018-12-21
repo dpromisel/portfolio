@@ -7,6 +7,8 @@ import './App.css';
 
 import Home from './components/home';
 import NbaApp from './components/nbaIndex/nbaApp';
+import Redesign from './components/redesign';
+
 
 
 class App extends Component {

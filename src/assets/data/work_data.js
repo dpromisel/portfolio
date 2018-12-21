@@ -24,6 +24,7 @@ export default [
         details: ``,
         img: redesign,
         pdf: redesign_pdf,
+        pdf_link: "redesign",
         alt: 'redesign',
         demo: ''
     },
@@ -37,6 +38,7 @@ export default [
         details: ``,
         img: eyetracking,
         pdf: iterative_pdf,
+        pdf_link: "iterative",
         alt: 'eyetracking',
         demo: ''
     },
@@ -68,6 +70,7 @@ export default [
         demonstrates to the user the professional look and feel of react web apps.`,
         img: development,
         pdf: '',
+        pdf_link: "",
         alt: 'Match Two',
         demo: "nbaIndex"
     },
@@ -86,6 +89,7 @@ export default [
         details: ``,
         img: flexnotes,
         pdf: personas_pdf,
+        pdf_link: "personas",
         alt: 'Storyboarding',
         demo: ''
     },

@@ -74,6 +74,7 @@ class Card extends Component {
           challenges={this.props.challenges}
           keys={this.props.takeaways}
           pdf={this.props.pdf}
+          pdf_link={this.props.pdf_link}
           demo={this.props.demo}
           details={this.props.details}>
           </MyModal>
