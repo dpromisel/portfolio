@@ -26,7 +26,8 @@ export default [
         pdf: redesign_pdf,
         pdf_link: "redesign",
         alt: 'redesign',
-        demo: ''
+        demo: '',
+        google_id: '1SBBib1lxUmrz4XFSStqhSuBhZKZbqRV4'
     },
     {
         name: 'Iterative Design',
@@ -40,7 +41,8 @@ export default [
         pdf: iterative_pdf,
         pdf_link: "iterative",
         alt: 'eyetracking',
-        demo: ''
+        demo: '',
+        google_id: '1fhsmkfSMaZgBDohih3czkMI3vgHVpFtI'
     },
     {
         name: 'React Development',
@@ -72,7 +74,8 @@ export default [
         pdf: '',
         pdf_link: "",
         alt: 'Match Two',
-        demo: "nbaIndex"
+        demo: "nbaIndex",
+        google_id: ''
     },
     {
         name: 'Personas & Storyboarding',
@@ -91,6 +94,7 @@ export default [
         pdf: personas_pdf,
         pdf_link: "personas",
         alt: 'Storyboarding',
-        demo: ''
+        demo: '',
+        google_id: '12G2zDFud1eXEo2XIKXpU5zBQRAgld62D'
     },
 ];

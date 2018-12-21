@@ -8,7 +8,9 @@ import './App.css';
 import Home from './components/home';
 import NbaApp from './components/nbaIndex/nbaApp';
 import Redesign from './components/redesign';
-
+import Iterative from './components/iterative';
+import Personas from './components/personas';
+import Resume from './components/resume';
 
 
 class App extends Component {
@@ -18,6 +20,10 @@ class App extends Component {
         <div>
           <Route path='/' component={Home} exact />
           <Route path='/nbaIndex' component={NbaApp}/>
+          <Route path='/resume' component={Resume}/>
+          <Route path='/redesign' component={Redesign}/>
+          <Route path='/iterative' component={Iterative}/>
+          <Route path='/personas' component={Personas}/>
         </div>
       </BrowserRouter>
     );
