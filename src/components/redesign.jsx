@@ -11,7 +11,7 @@ export default props=>{
       <NavBar/>
       <center>
       <iframe
-      src="http://docs.google.com/gview?url=https://drive.google.com/uc?id=1SBBib1lxUmrz4XFSStqhSuBhZKZbqRV4&embedded=true"
+      src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1SBBib1lxUmrz4XFSStqhSuBhZKZbqRV4&embedded=true"
       frameborder="0"
       styles={{width: '500px', height: 600}}>
       </iframe>

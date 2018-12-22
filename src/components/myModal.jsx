@@ -25,7 +25,7 @@ class MyModal extends Component {
   read_more = () => {
     if (this.props.pdf !== "")  {
       return (
-        <a href={'/portfolio/' + this.props.pdf_link} target="_blank">
+        <a href={this.props.pdf} target="_blank">
           <Button>Read More</Button>
         </a>
       );

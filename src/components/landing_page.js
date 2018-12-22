@@ -65,7 +65,7 @@ export default props =>{
 
       <Row>
       <center>
-        <a href={'/portfolio/resume'} style={{textDecoration: 'none'}} target="_blank">
+        <a href={resume} style={{textDecoration: 'none'}} target="_blank">
           <Button>Download Resume</Button>
         </a>
         </center>
