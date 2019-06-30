@@ -29,7 +29,7 @@ export default props =>{
     <Jumbotron>
     <Grid>
       <Row>
-        <h1>David Promisel</h1>
+        <h1>David Matthias Promisel</h1>
         <h4>Software Engineer || User Interface Designer</h4>
       </Row>
 
